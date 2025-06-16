@@ -1,0 +1,19 @@
+import turtle
+
+t = turtle.Turtle()
+s = turtle.Screen()
+s.bgcolor('#274295')
+t.pencolor('#535466')
+t.speed(100)
+col=('#ED7864', '#6E544F', '#592F2F', '#6E382E')
+
+for index in range(10):
+    for second_index in range(20):
+        t.speed(5)
+        for x in range(2):
+            t.pensize(2)
+            t.circle(80 + index * 20, 90)
+            t.lt(90)
+        t.lt(45)
+    t.pencolor(col[index % 4])
+s.exitonclick()
