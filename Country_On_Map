@@ -1,0 +1,22 @@
+import plotly.express as px
+import pandas as pd
+
+while True:
+    country = input('Enter the name of the country: ')
+
+    data = {
+    'Country': [country],
+    'Values': [100]}
+
+    fig = px.choropleth(
+        data,
+        locations='Country',
+        locationmode='country names',
+        color='Values',
+        color_continuous_scale='Inferno',
+        title=f'Country highlighted {country}')
+    if fig.data and not pd.isnull(fig.data[0]['locations']).all():
+        fig.show()
+        break
+    else:
+        print(f"'{country}' is not recognized. Please enter a valid country name.")
