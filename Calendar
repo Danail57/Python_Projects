@@ -1,4 +1,4 @@
-"""
+
 This program displays a full calendar for a given year using Python's built-in `calendar` module.
 
 It uses `TextCalendar()` to generate a text-based calendar in a formatted layout.
@@ -21,7 +21,7 @@ Where:
 In this program:
     formatyear(year, 2, 1, 8, 3)
 → sets column width to 2, line spacing to 1, 8 spaces between months, and 3 months per row.
-"""
+
 
 from calendar import TextCalendar
 year = int(input('Enter the year you want: '))
