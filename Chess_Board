@@ -1,9 +1,12 @@
+
+This Python mini-project uses the `turtle` graphics library to draw an 8x8 chess board.
+
 import turtle
 
 screen = turtle.Screen()
 pencil = turtle.Turtle()
 
-def draw():
+def draw_square():
     for i in range(4):
         pencil.forward(30)
         pencil.left(90)
@@ -27,7 +30,7 @@ if __name__ == "__main__":
 
             pencil.fillcolor(colour)
             pencil.begin_fill()
-            draw()
+            draw_square()
             pencil.end_fill()
 
     pencil.hideturtle()
