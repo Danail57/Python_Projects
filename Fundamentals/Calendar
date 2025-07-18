@@ -1,0 +1,29 @@
+
+This program displays a full calendar for a given year using Python's built-in `calendar` module.
+
+It uses `TextCalendar()` to generate a text-based calendar in a formatted layout.
+
+Steps:
+1. The user is prompted to enter a year.
+2. The `formatyear()` method is used to create the full calendar for that year.
+3. The result is printed in a readable layout.
+
+Syntax:
+    formatyear(year, w=2, l=1, c=6, m=3)
+
+Where:
+- `year` is the target year to display,
+- `w` is the width of date columns (default is 2),
+- `l` is the number of lines for each week (default is 1),
+- `c` is the number of spaces between months (default is 6),
+- `m` is the number of months per row (default is 3)
+
+In this program:
+    formatyear(year, 2, 1, 8, 3)
+→ sets column width to 2, line spacing to 1, 8 spaces between months, and 3 months per row.
+
+
+from calendar import TextCalendar
+year = int(input('Enter the year you want: '))
+cal = TextCalendar()
+print(cal.formatyear(year, 2, 1, 8, 3))
