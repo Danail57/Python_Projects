@@ -6,7 +6,7 @@
 
 
 def pizza_menu():
-    #
+    
     pizzas = ["Pepperoni", "Hawaiian", "Ordinary"]
     print("Available pizzas:")
     for idx, pizza in enumerate(pizzas, 1):
@@ -21,7 +21,6 @@ def pizza_menu():
 
 
 def pizza_size():
-    # Размери на пиците
     sizes = {"S": 5, "M": 7, "L": 10}
     print("Available sizes: S, M, L")
     size = input("Please, select a size (S, M, L): ").upper()
@@ -33,7 +32,6 @@ def pizza_size():
 
 
 def additionals_menu():
-
     additionals = {
         "cheese": 0.75,
         "ranch sausage": 1.20,
