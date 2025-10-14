@@ -1,14 +1,14 @@
-This program generates a random secret number between 1 and 100.
-The user is asked to guess the number, and the program provides feedback:
-- If the guess is too low: it says "Your number is too low."
-- If the guess is too high: it says "Your number is too high."
-- If the guess is correct: it congratulates the user and shows the number of attempts.
+# This program generates a random secret number between 1 and 100.
+# The user is asked to guess the number, and the program provides feedback:
+# - If the guess is too low: it says "Your number is too low."
+# - If the guess is too high: it says "Your number is too high."
+# - If the guess is correct: it congratulates the user and shows the number of attempts.
 
-Key Features:
-- Uses `random.randint(1, 100)` to select the secret number.
-- Counts and reports the number of user attempts.
-- Uses a `try-except` block to handle invalid (non-integer) input.
-- Runs in a loop until the correct number is guessed.
+# Key Features:
+# - Uses `random.randint(1, 100)` to select the secret number.
+# - Counts and reports the number of user attempts.
+# - Uses a `try-except` block to handle invalid (non-integer) input.
+# - Runs in a loop until the correct number is guessed.
 
 
 import random
