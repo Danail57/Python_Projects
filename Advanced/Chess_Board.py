@@ -1,5 +1,5 @@
 
-This Python mini-project uses the `turtle` graphics library to draw an 8x8 chess board.
+# This Python mini-project uses the `turtle` graphics library to draw an 8x8 chess board.
 
 import turtle
 
