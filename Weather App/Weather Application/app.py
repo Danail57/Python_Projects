@@ -1,4 +1,4 @@
-
+# Work in progress
 class WeatherApp:
     def __init__(self):
         self.forecast = None
@@ -72,4 +72,5 @@ class API:
 
 
     if not info_data:
+
         print("No data found.")
