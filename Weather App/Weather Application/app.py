@@ -1,6 +1,6 @@
 import requests
 
-BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+BASE_URL = ...
 
 class WeatherApp:
     def __init__(self):
@@ -90,3 +90,4 @@ class WeatherApp:
 
 app = WeatherApp()
 app.menu_forecast()
+
